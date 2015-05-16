@@ -1,4 +1,5 @@
 FROM progrium/busybox
+MAINTAINER Cell <docker.cell@outer.systems>
 
 RUN mkdir -p /app/data /app/ui &&\
     wget -O - http://dl.bintray.com/mitchellh/consul/0.5.1_linux_amd64.zip >/tmp/consul.zip &&\
