@@ -20,6 +20,6 @@ RUN mkdir -p /app/data /app/ui &&\
     echo -e "#!/bin/sh\nexec /app/consul agent -config-dir /app \$@" >/entrypoint.sh &&\
     chmod +x /entrypoint.sh
 
-EXPOSE 8300 8301 8301/udp 850053 53/udp
+EXPOSE 8300 8301 8301/udp 8500 53 53/udp
 ENTRYPOINT ["/entrypoint.sh"]
 
