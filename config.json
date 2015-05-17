@@ -4,7 +4,7 @@
 	"log_level": "WARN",
 	"domain": "consul.",
 	"ports": { "dns": 53 },
-	"ui_dir": "/app/ui",
+	"ui_dir": "/consul/ui",
 	"recursors": [ "8.8.4.4" ],
 	"retry_join": ["consul"]
 }
